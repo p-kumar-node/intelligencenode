@@ -1,0 +1,15 @@
+---
+- hosts: 192.168.239.141
+  become: true
+  become_user: root
+  tasks:
+   - name: Install FTP Server and enable service
+     yum:
+      pkg: vsftpd
+      state: installed
+   - name: Start FTP service
+     service:
+      name: vsftpd
+      enabled: true
+      state: started
+      
