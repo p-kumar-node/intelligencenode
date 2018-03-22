@@ -1,0 +1,37 @@
+---
+- hosts: 192.168.239.141
+  become: true
+  become_user: root
+  tasks:
+  - name: Latest HTTP version installed
+    yum:
+     name: httpd
+     state: latest
+  - name: httpd enabled and running
+    service:
+      name: httpd
+      enabled: true
+      state: started
+###########################################
+- hosts: 192.168.239.135
+  become: true
+  become_user: root
+  tasks:
+  - name: Latest apache2 version installed
+    apt:
+     name: apache2
+     state: latest
+  - name: apache2 enabled and running
+    service:
+      name: apache2
+      enabled: true
+      state: started
+
+
+
+
+
+
+
+
+
