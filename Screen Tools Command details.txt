@@ -1,0 +1,43 @@
+Screen Multiplexer tool
+
+#screen   # To open screen terminal
+    Every command in screen  need ctrl+a (hold ctrl+a then press any command argument) just like prefix of every command
+#screen -ls  #### display screen  listing (virtual terminal listing)
+#screen -S secondscreensession ####To open new screen session with custom name
+To detached screen session hold ctrl+a and then press command argument
+#screen -r session-name or session PID ### to reopen detached screen session
+#screen -X -S 12108 (PID) quit   ## To get rid of this screen session
+#screen -ls  =====Now seesion will available in List
+hold ctrl+a and press k  to kill window with in session 
+to create new window with session please hold ctrl+a and then press c
+To list window with session hold ctrl+a and then press w to check windows
+To move witnin window hold ctrl+a and press n( to next window & p for previous window)
+Now to kill any window press ctrl+a and k 
+To copy window pressl ctrl+a and press c
+To kill all window press ctrl+a and press \(back ward slash)
+TO open list of window in session press ctrl+a+w
+To open particular window press crtrl+a+1(2,3) ##to swith between window 
+to rename window name ctrl+a+A
+to split windows vertically  ctrl+a+| to shift to split window left pane press ctrl+a+tab
+to split windows horizatelly ctrl+a+S
+to remove windows vertically  ctrl+a+x
+to lock current window session ctrl+a+X
+to run any command in screen run #screen -d -m python counter.py
+#screen ctrl+a+?   #####it will so you screen bindings or help menu command
+	
+How to keep processes running over SSH without being connected - using GNU screen
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
