@@ -14,8 +14,11 @@
       state: started
 ###############################################
 # This is commented lines to check git command.
-#
-#
-#
-#
+# git init
+# git clone "remote path of git repository"
+# git branch "To check in which branch we are"
+# git status
+# git add "file name"
+# git commit -m "commit message need to add while commiting to repository"
+# git push origin master "here master is name of branch where we are adding modifications"
 # #############################################W:      
