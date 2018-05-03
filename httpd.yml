@@ -27,8 +27,8 @@
       enabled: true
       state: started
 
-
-
+#########################################################
+# This is not added in Play book. It is for checking wheterh git repository is updating or not.#
 
 
 
